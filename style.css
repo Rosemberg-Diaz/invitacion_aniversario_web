@@ -71,6 +71,36 @@ figcaption{position:absolute;left:12px;bottom:10px;background:rgba(94,15,27,.92)
 .family-text{font-family:Cormorant Garamond,serif;font-size:1.35rem;line-height:1.28;max-width:610px;margin:8px auto 0}
 .details{padding:30px 24px;text-align:left}.details .section-title{text-align:center}
 .detail-list{display:grid;gap:14px;margin:20px 0}.detail{display:flex;gap:14px;align-items:flex-start}.detail span{width:38px;height:38px;border-radius:50%;background:var(--wine);color:#fff;display:grid;place-items:center;flex:0 0 38px}.detail p{margin:5px 0 0;font-size:1.05rem;line-height:1.35}.detail strong{color:var(--wine)}
+
+.location-note{
+  margin:22px auto 0;
+  text-align:center;
+  font-weight:700;
+  color:var(--wine);
+  background:rgba(200,155,60,.14);
+  border:1px dashed rgba(200,155,60,.75);
+  border-radius:18px;
+  padding:14px 16px;
+  line-height:1.35;
+}
+.location-reveal{
+  margin:26px auto 0;
+  padding:22px 18px;
+  border-radius:22px;
+  background:linear-gradient(160deg,#fffaf0,#f7e8cd);
+  border:1.5px solid rgba(200,155,60,.85);
+  color:var(--text);
+  text-align:left;
+}
+.location-reveal[hidden]{display:none}
+.location-ready{
+  text-align:center;
+  color:var(--wine);
+  font-weight:800;
+  margin:0 0 14px;
+}
+.location-list{margin:10px 0 16px}
+
 .button{display:block;width:min(420px,100%);margin:24px auto 0;text-align:center;text-decoration:none;color:#fff9eb;background:linear-gradient(135deg,#6b1220,#3d0911);border:1.5px solid var(--gold);border-radius:999px;padding:15px 24px;font-weight:800;font-size:1.1rem;box-shadow:0 14px 28px rgba(80,10,20,.25)}
 .countdown{width:calc(100% - 32px);margin:22px auto;border-radius:26px;border:1.5px solid var(--gold);background:linear-gradient(160deg,#4d0b15,#7a1523);color:#fff7de;text-align:center;box-shadow:var(--shadow)}
 .countdown h2{font-family:Cormorant Garamond,serif;color:var(--gold-soft);font-size:2.45rem;margin:0 0 8px}.countdown p{max-width:560px;margin:0 auto 24px;color:#ffeacc;line-height:1.45}.countdown-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.countdown-grid div{background:#fff4df;color:var(--wine);border-radius:16px;padding:15px 6px;border:1px solid rgba(200,155,60,.8);box-shadow:inset 0 -6px 14px rgba(121,59,0,.08)}.countdown-grid strong{font-family:Cormorant Garamond,serif;display:block;font-size:2.35rem;line-height:1}.countdown-grid span{font-size:.76rem;font-weight:700;color:#65311b}

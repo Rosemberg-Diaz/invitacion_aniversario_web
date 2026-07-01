@@ -4,7 +4,13 @@ const ids = ['days', 'hours', 'minutes', 'seconds'];
 function updateCountdown() {
   const now = new Date();
   let diff = eventDate - now;
-  if (diff < 0) diff = 0;
+  const locationReveal = document.getElementById('locationReveal');
+  if (diff <= 0) {
+    diff = 0;
+    if (locationReveal) locationReveal.hidden = false;
+  } else if (locationReveal) {
+    locationReveal.hidden = true;
+  }
 
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
   const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
